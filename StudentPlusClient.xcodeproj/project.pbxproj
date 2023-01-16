@@ -14,6 +14,7 @@
 		B82DEC6329719C8C00BAE6A3 /* StudentPlusClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DEC6229719C8C00BAE6A3 /* StudentPlusClientTests.swift */; };
 		B82DEC6D29719C8C00BAE6A3 /* StudentPlusClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DEC6C29719C8C00BAE6A3 /* StudentPlusClientUITests.swift */; };
 		B82DEC6F29719C8C00BAE6A3 /* StudentPlusClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DEC6E29719C8C00BAE6A3 /* StudentPlusClientUITestsLaunchTests.swift */; };
+		B88D47282975D27700E6F5DB /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = B88D47272975D27700E6F5DB /* WebRTC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88D47282975D27700E6F5DB /* WebRTC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = StudentPlusClient;
+			packageProductDependencies = (
+				B88D47272975D27700E6F5DB /* WebRTC */,
+			);
 			productName = StudentPlusClient;
 			productReference = B82DEC4D29719C8B00BAE6A3 /* StudentPlusClient.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = B82DEC4429719C8B00BAE6A3;
+			packageReferences = (
+				B88D47262975D27700E6F5DB /* XCRemoteSwiftPackageReference "WebRTC" */,
+			);
 			productRefGroup = B82DEC4E29719C8B00BAE6A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -612,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B88D47262975D27700E6F5DB /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stasel/WebRTC.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 96.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B88D47272975D27700E6F5DB /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B88D47262975D27700E6F5DB /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B82DEC4529719C8B00BAE6A3 /* Project object */;
 }
