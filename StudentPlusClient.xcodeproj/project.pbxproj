@@ -8,13 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		B82DEC5129719C8B00BAE6A3 /* StudentPlusClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DEC5029719C8B00BAE6A3 /* StudentPlusClientApp.swift */; };
-		B82DEC5329719C8B00BAE6A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DEC5229719C8B00BAE6A3 /* ContentView.swift */; };
 		B82DEC5529719C8C00BAE6A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82DEC5429719C8C00BAE6A3 /* Assets.xcassets */; };
 		B82DEC5929719C8C00BAE6A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82DEC5829719C8C00BAE6A3 /* Preview Assets.xcassets */; };
 		B82DEC6329719C8C00BAE6A3 /* StudentPlusClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DEC6229719C8C00BAE6A3 /* StudentPlusClientTests.swift */; };
 		B82DEC6D29719C8C00BAE6A3 /* StudentPlusClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DEC6C29719C8C00BAE6A3 /* StudentPlusClientUITests.swift */; };
 		B82DEC6F29719C8C00BAE6A3 /* StudentPlusClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DEC6E29719C8C00BAE6A3 /* StudentPlusClientUITestsLaunchTests.swift */; };
-		B88D47282975D27700E6F5DB /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = B88D47272975D27700E6F5DB /* WebRTC */; };
+		B86A79932A015D9900838941 /* UserTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79922A015D9900838941 /* UserTypeSelectionView.swift */; };
+		B86A79952A01670600838941 /* SupervisorSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79942A01670600838941 /* SupervisorSignUpView.swift */; };
+		B86A79972A01672600838941 /* SupervisorSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79962A01672600838941 /* SupervisorSignUpViewModel.swift */; };
+		B86A799C2A01734400838941 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A799B2A01734400838941 /* MainPageView.swift */; };
+		B86A799E2A01734C00838941 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A799D2A01734C00838941 /* MainPageViewModel.swift */; };
+		B86A79A02A01809500838941 /* SupervisorSignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A799F2A01809500838941 /* SupervisorSignUpRequest.swift */; };
+		B86A79A22A0180AC00838941 /* SupervisorDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79A12A0180AC00838941 /* SupervisorDto.swift */; };
+		B86A79A42A01853500838941 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79A32A01853500838941 /* UserType.swift */; };
+		B86A79A82A0186FD00838941 /* AddStudentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79A72A0186FD00838941 /* AddStudentsView.swift */; };
+		B86A79AA2A01870200838941 /* AddStudentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79A92A01870200838941 /* AddStudentsViewModel.swift */; };
+		B86A79AC2A01871B00838941 /* SelectSupervisorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79AB2A01871B00838941 /* SelectSupervisorView.swift */; };
+		B86A79AE2A01872800838941 /* SelectSupervisorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79AD2A01872800838941 /* SelectSupervisorViewModel.swift */; };
+		B86A79B22A01C24200838941 /* SupervisorSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79B12A01C24200838941 /* SupervisorSignInView.swift */; };
+		B86A79B42A01C24A00838941 /* SupervisorSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79B32A01C24A00838941 /* SupervisorSignInViewModel.swift */; };
+		B86A79B72A01CB2100838941 /* MainPageRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79B62A01CB2100838941 /* MainPageRoute.swift */; };
+		B86A79BD2A01D38D00838941 /* SuperviseeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79BC2A01D38D00838941 /* SuperviseeDto.swift */; };
+		B86A79BF2A01D3AD00838941 /* MainPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79BE2A01D3AD00838941 /* MainPageService.swift */; };
+		B88B1AC92A00215800B43D07 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AC82A00215800B43D07 /* SignUpViewModel.swift */; };
+		B88B1ACC2A00218C00B43D07 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1ACB2A00218B00B43D07 /* SignUpView.swift */; };
+		B88B1ACE2A00219000B43D07 /* SingInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1ACD2A00219000B43D07 /* SingInView.swift */; };
+		B88B1AD02A00219500B43D07 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1ACF2A00219500B43D07 /* SignInViewModel.swift */; };
+		B88B1AD52A00225B00B43D07 /* AuthRequestsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AD42A00225B00B43D07 /* AuthRequestsService.swift */; };
+		B88B1AD92A00228700B43D07 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AD82A00228700B43D07 /* Route.swift */; };
+		B88B1ADB2A00229A00B43D07 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1ADA2A00229A00B43D07 /* NetworkingManager.swift */; };
+		B88B1ADE2A0025FF00B43D07 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1ADD2A0025FF00B43D07 /* AppConfig.swift */; };
+		B88B1AE02A00260300B43D07 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1ADF2A00260300B43D07 /* AppData.swift */; };
+		B88B1AE32A0029FE00B43D07 /* AuthRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AE22A0029FE00B43D07 /* AuthRoute.swift */; };
+		B88B1AE52A002A6400B43D07 /* RouteMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AE42A002A6400B43D07 /* RouteMethod.swift */; };
+		B88B1AE92A002D9E00B43D07 /* ColourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AE82A002D9E00B43D07 /* ColourManager.swift */; };
+		B88B1AEB2A002DBC00B43D07 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AEA2A002DBC00B43D07 /* FontsManager.swift */; };
+		B88B1AED2A0030A800B43D07 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AEC2A0030A800B43D07 /* SignUpRequest.swift */; };
+		B88B1AEF2A00328B00B43D07 /* StudentDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AEE2A00328B00B43D07 /* StudentDto.swift */; };
+		B88B1AF12A00334100B43D07 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AF02A00334100B43D07 /* SignInRequest.swift */; };
+		B88B1AF32A00362400B43D07 /* FormattingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AF22A00362400B43D07 /* FormattingManager.swift */; };
+		B88B1AF62A003AA200B43D07 /* YearPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AF52A003AA200B43D07 /* YearPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +70,6 @@
 /* Begin PBXFileReference section */
 		B82DEC4D29719C8B00BAE6A3 /* StudentPlusClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentPlusClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82DEC5029719C8B00BAE6A3 /* StudentPlusClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentPlusClientApp.swift; sourceTree = "<group>"; };
-		B82DEC5229719C8B00BAE6A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B82DEC5429719C8C00BAE6A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B82DEC5629719C8C00BAE6A3 /* StudentPlusClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudentPlusClient.entitlements; sourceTree = "<group>"; };
 		B82DEC5829719C8C00BAE6A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,6 +78,41 @@
 		B82DEC6829719C8C00BAE6A3 /* StudentPlusClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudentPlusClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82DEC6C29719C8C00BAE6A3 /* StudentPlusClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentPlusClientUITests.swift; sourceTree = "<group>"; };
 		B82DEC6E29719C8C00BAE6A3 /* StudentPlusClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentPlusClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B86A79922A015D9900838941 /* UserTypeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionView.swift; sourceTree = "<group>"; };
+		B86A79942A01670600838941 /* SupervisorSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorSignUpView.swift; sourceTree = "<group>"; };
+		B86A79962A01672600838941 /* SupervisorSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorSignUpViewModel.swift; sourceTree = "<group>"; };
+		B86A799B2A01734400838941 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		B86A799D2A01734C00838941 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
+		B86A799F2A01809500838941 /* SupervisorSignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorSignUpRequest.swift; sourceTree = "<group>"; };
+		B86A79A12A0180AC00838941 /* SupervisorDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorDto.swift; sourceTree = "<group>"; };
+		B86A79A32A01853500838941 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		B86A79A72A0186FD00838941 /* AddStudentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentsView.swift; sourceTree = "<group>"; };
+		B86A79A92A01870200838941 /* AddStudentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentsViewModel.swift; sourceTree = "<group>"; };
+		B86A79AB2A01871B00838941 /* SelectSupervisorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSupervisorView.swift; sourceTree = "<group>"; };
+		B86A79AD2A01872800838941 /* SelectSupervisorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSupervisorViewModel.swift; sourceTree = "<group>"; };
+		B86A79B12A01C24200838941 /* SupervisorSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorSignInView.swift; sourceTree = "<group>"; };
+		B86A79B32A01C24A00838941 /* SupervisorSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorSignInViewModel.swift; sourceTree = "<group>"; };
+		B86A79B62A01CB2100838941 /* MainPageRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageRoute.swift; sourceTree = "<group>"; };
+		B86A79BC2A01D38D00838941 /* SuperviseeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperviseeDto.swift; sourceTree = "<group>"; };
+		B86A79BE2A01D3AD00838941 /* MainPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageService.swift; sourceTree = "<group>"; };
+		B88B1AC82A00215800B43D07 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		B88B1ACB2A00218B00B43D07 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B88B1ACD2A00219000B43D07 /* SingInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInView.swift; sourceTree = "<group>"; };
+		B88B1ACF2A00219500B43D07 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		B88B1AD42A00225B00B43D07 /* AuthRequestsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestsService.swift; sourceTree = "<group>"; };
+		B88B1AD82A00228700B43D07 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		B88B1ADA2A00229A00B43D07 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		B88B1ADD2A0025FF00B43D07 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		B88B1ADF2A00260300B43D07 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		B88B1AE22A0029FE00B43D07 /* AuthRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRoute.swift; sourceTree = "<group>"; };
+		B88B1AE42A002A6400B43D07 /* RouteMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMethod.swift; sourceTree = "<group>"; };
+		B88B1AE82A002D9E00B43D07 /* ColourManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourManager.swift; sourceTree = "<group>"; };
+		B88B1AEA2A002DBC00B43D07 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		B88B1AEC2A0030A800B43D07 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		B88B1AEE2A00328B00B43D07 /* StudentDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDto.swift; sourceTree = "<group>"; };
+		B88B1AF02A00334100B43D07 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
+		B88B1AF22A00362400B43D07 /* FormattingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattingManager.swift; sourceTree = "<group>"; };
+		B88B1AF52A003AA200B43D07 /* YearPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +120,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88D47282975D27700E6F5DB /* WebRTC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,11 +163,14 @@
 		B82DEC4F29719C8B00BAE6A3 /* StudentPlusClient */ = {
 			isa = PBXGroup;
 			children = (
-				B82DEC5029719C8B00BAE6A3 /* StudentPlusClientApp.swift */,
-				B82DEC5229719C8B00BAE6A3 /* ContentView.swift */,
-				B82DEC5429719C8C00BAE6A3 /* Assets.xcassets */,
 				B82DEC5629719C8C00BAE6A3 /* StudentPlusClient.entitlements */,
+				B82DEC5429719C8C00BAE6A3 /* Assets.xcassets */,
+				B88B1ADC2A0025EE00B43D07 /* App */,
+				B88B1AF42A003A9700B43D07 /* Components */,
+				B88B1AE72A002D8F00B43D07 /* Managers */,
+				B88B1AD22A00222300B43D07 /* Networking */,
 				B82DEC5729719C8C00BAE6A3 /* Preview Content */,
+				B88B1AC52A00211700B43D07 /* Scenes */,
 			);
 			path = StudentPlusClient;
 			sourceTree = "<group>";
@@ -131,6 +200,157 @@
 			path = StudentPlusClientUITests;
 			sourceTree = "<group>";
 		};
+		B86A79982A01674E00838941 /* Supervisor */ = {
+			isa = PBXGroup;
+			children = (
+				B86A79942A01670600838941 /* SupervisorSignUpView.swift */,
+				B86A79962A01672600838941 /* SupervisorSignUpViewModel.swift */,
+				B86A79B12A01C24200838941 /* SupervisorSignInView.swift */,
+				B86A79B32A01C24A00838941 /* SupervisorSignInViewModel.swift */,
+			);
+			path = Supervisor;
+			sourceTree = "<group>";
+		};
+		B86A79992A01675C00838941 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				B88B1ACB2A00218B00B43D07 /* SignUpView.swift */,
+				B88B1AC82A00215800B43D07 /* SignUpViewModel.swift */,
+				B88B1ACD2A00219000B43D07 /* SingInView.swift */,
+				B88B1ACF2A00219500B43D07 /* SignInViewModel.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		B86A79A52A0186DE00838941 /* AddStudents */ = {
+			isa = PBXGroup;
+			children = (
+				B86A79A72A0186FD00838941 /* AddStudentsView.swift */,
+				B86A79A92A01870200838941 /* AddStudentsViewModel.swift */,
+			);
+			path = AddStudents;
+			sourceTree = "<group>";
+		};
+		B86A79A62A0186E500838941 /* SelectSupervisor */ = {
+			isa = PBXGroup;
+			children = (
+				B86A79AB2A01871B00838941 /* SelectSupervisorView.swift */,
+				B86A79AD2A01872800838941 /* SelectSupervisorViewModel.swift */,
+			);
+			path = SelectSupervisor;
+			sourceTree = "<group>";
+		};
+		B86A79BB2A01D38500838941 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B86A79BC2A01D38D00838941 /* SuperviseeDto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B88B1AC52A00211700B43D07 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B88B1ACA2A00215D00B43D07 /* Auth */,
+				B88B1AD12A0021A000B43D07 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B88B1ACA2A00215D00B43D07 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B86A79922A015D9900838941 /* UserTypeSelectionView.swift */,
+				B88B1AE62A002AFA00B43D07 /* Models */,
+				B86A79992A01675C00838941 /* Student */,
+				B86A79982A01674E00838941 /* Supervisor */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B88B1AD12A0021A000B43D07 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B86A79BB2A01D38500838941 /* Models */,
+				B86A799B2A01734400838941 /* MainPageView.swift */,
+				B86A799D2A01734C00838941 /* MainPageViewModel.swift */,
+				B86A79A52A0186DE00838941 /* AddStudents */,
+				B86A79A62A0186E500838941 /* SelectSupervisor */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B88B1AD22A00222300B43D07 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B88B1ADA2A00229A00B43D07 /* NetworkingManager.swift */,
+				B88B1AD82A00228700B43D07 /* Route.swift */,
+				B88B1AE42A002A6400B43D07 /* RouteMethod.swift */,
+				B88B1AE12A0029E700B43D07 /* Routes */,
+				B88B1AD32A00224600B43D07 /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B88B1AD32A00224600B43D07 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B88B1AD42A00225B00B43D07 /* AuthRequestsService.swift */,
+				B86A79BE2A01D3AD00838941 /* MainPageService.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		B88B1ADC2A0025EE00B43D07 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B82DEC5029719C8B00BAE6A3 /* StudentPlusClientApp.swift */,
+				B88B1ADD2A0025FF00B43D07 /* AppConfig.swift */,
+				B88B1ADF2A00260300B43D07 /* AppData.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B88B1AE12A0029E700B43D07 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				B88B1AE22A0029FE00B43D07 /* AuthRoute.swift */,
+				B86A79B62A01CB2100838941 /* MainPageRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		B88B1AE62A002AFA00B43D07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B88B1AF02A00334100B43D07 /* SignInRequest.swift */,
+				B88B1AEC2A0030A800B43D07 /* SignUpRequest.swift */,
+				B88B1AEE2A00328B00B43D07 /* StudentDto.swift */,
+				B86A79A12A0180AC00838941 /* SupervisorDto.swift */,
+				B86A799F2A01809500838941 /* SupervisorSignUpRequest.swift */,
+				B86A79A32A01853500838941 /* UserType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B88B1AE72A002D8F00B43D07 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B88B1AE82A002D9E00B43D07 /* ColourManager.swift */,
+				B88B1AEA2A002DBC00B43D07 /* FontsManager.swift */,
+				B88B1AF22A00362400B43D07 /* FormattingManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B88B1AF42A003A9700B43D07 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B88B1AF52A003AA200B43D07 /* YearPicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,7 +368,6 @@
 			);
 			name = StudentPlusClient;
 			packageProductDependencies = (
-				B88D47272975D27700E6F5DB /* WebRTC */,
 			);
 			productName = StudentPlusClient;
 			productReference = B82DEC4D29719C8B00BAE6A3 /* StudentPlusClient.app */;
@@ -267,8 +486,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B82DEC5329719C8B00BAE6A3 /* ContentView.swift in Sources */,
+				B86A799E2A01734C00838941 /* MainPageViewModel.swift in Sources */,
+				B88B1ADE2A0025FF00B43D07 /* AppConfig.swift in Sources */,
+				B88B1AE92A002D9E00B43D07 /* ColourManager.swift in Sources */,
+				B88B1ACC2A00218C00B43D07 /* SignUpView.swift in Sources */,
+				B86A79AA2A01870200838941 /* AddStudentsViewModel.swift in Sources */,
+				B86A79B42A01C24A00838941 /* SupervisorSignInViewModel.swift in Sources */,
+				B88B1AD92A00228700B43D07 /* Route.swift in Sources */,
+				B86A79BF2A01D3AD00838941 /* MainPageService.swift in Sources */,
+				B86A79972A01672600838941 /* SupervisorSignUpViewModel.swift in Sources */,
+				B88B1AC92A00215800B43D07 /* SignUpViewModel.swift in Sources */,
+				B88B1ACE2A00219000B43D07 /* SingInView.swift in Sources */,
+				B88B1AF32A00362400B43D07 /* FormattingManager.swift in Sources */,
+				B88B1AED2A0030A800B43D07 /* SignUpRequest.swift in Sources */,
+				B86A79A82A0186FD00838941 /* AddStudentsView.swift in Sources */,
+				B86A79AC2A01871B00838941 /* SelectSupervisorView.swift in Sources */,
+				B86A79932A015D9900838941 /* UserTypeSelectionView.swift in Sources */,
+				B88B1AD52A00225B00B43D07 /* AuthRequestsService.swift in Sources */,
+				B86A79AE2A01872800838941 /* SelectSupervisorViewModel.swift in Sources */,
+				B88B1AE32A0029FE00B43D07 /* AuthRoute.swift in Sources */,
+				B86A79A22A0180AC00838941 /* SupervisorDto.swift in Sources */,
+				B86A79B72A01CB2100838941 /* MainPageRoute.swift in Sources */,
+				B88B1AEF2A00328B00B43D07 /* StudentDto.swift in Sources */,
+				B86A79A02A01809500838941 /* SupervisorSignUpRequest.swift in Sources */,
+				B88B1ADB2A00229A00B43D07 /* NetworkingManager.swift in Sources */,
+				B88B1AE52A002A6400B43D07 /* RouteMethod.swift in Sources */,
+				B88B1AF12A00334100B43D07 /* SignInRequest.swift in Sources */,
+				B88B1AD02A00219500B43D07 /* SignInViewModel.swift in Sources */,
 				B82DEC5129719C8B00BAE6A3 /* StudentPlusClientApp.swift in Sources */,
+				B86A79952A01670600838941 /* SupervisorSignUpView.swift in Sources */,
+				B86A79B22A01C24200838941 /* SupervisorSignInView.swift in Sources */,
+				B86A799C2A01734400838941 /* MainPageView.swift in Sources */,
+				B86A79A42A01853500838941 /* UserType.swift in Sources */,
+				B88B1AEB2A002DBC00B43D07 /* FontsManager.swift in Sources */,
+				B88B1AF62A003AA200B43D07 /* YearPicker.swift in Sources */,
+				B86A79BD2A01D38D00838941 /* SuperviseeDto.swift in Sources */,
+				B88B1AE02A00260300B43D07 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,14 +884,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B88D47272975D27700E6F5DB /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B88D47262975D27700E6F5DB /* XCRemoteSwiftPackageReference "WebRTC" */;
-			productName = WebRTC;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B82DEC4529719C8B00BAE6A3 /* Project object */;
 }
