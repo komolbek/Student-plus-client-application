@@ -30,6 +30,7 @@
 		B86A79B72A01CB2100838941 /* MainPageRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79B62A01CB2100838941 /* MainPageRoute.swift */; };
 		B86A79BD2A01D38D00838941 /* SuperviseeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79BC2A01D38D00838941 /* SuperviseeDto.swift */; };
 		B86A79BF2A01D3AD00838941 /* MainPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79BE2A01D3AD00838941 /* MainPageService.swift */; };
+		B86A79C12A01FE1800838941 /* AddStudentsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A79C02A01FE1800838941 /* AddStudentsViewModelTests.swift */; };
 		B88B1AC92A00215800B43D07 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1AC82A00215800B43D07 /* SignUpViewModel.swift */; };
 		B88B1ACC2A00218C00B43D07 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1ACB2A00218B00B43D07 /* SignUpView.swift */; };
 		B88B1ACE2A00219000B43D07 /* SingInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B1ACD2A00219000B43D07 /* SingInView.swift */; };
@@ -95,6 +96,7 @@
 		B86A79B62A01CB2100838941 /* MainPageRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageRoute.swift; sourceTree = "<group>"; };
 		B86A79BC2A01D38D00838941 /* SuperviseeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperviseeDto.swift; sourceTree = "<group>"; };
 		B86A79BE2A01D3AD00838941 /* MainPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageService.swift; sourceTree = "<group>"; };
+		B86A79C02A01FE1800838941 /* AddStudentsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentsViewModelTests.swift; sourceTree = "<group>"; };
 		B88B1AC82A00215800B43D07 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		B88B1ACB2A00218B00B43D07 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B88B1ACD2A00219000B43D07 /* SingInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInView.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				B82DEC6229719C8C00BAE6A3 /* StudentPlusClientTests.swift */,
+				B86A79C02A01FE1800838941 /* AddStudentsViewModelTests.swift */,
 			);
 			path = StudentPlusClientTests;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86A79C12A01FE1800838941 /* AddStudentsViewModelTests.swift in Sources */,
 				B82DEC6329719C8C00BAE6A3 /* StudentPlusClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

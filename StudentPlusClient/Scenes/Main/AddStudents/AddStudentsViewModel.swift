@@ -8,7 +8,7 @@
 import Foundation
 
 final class AddStudentsViewModel: ObservableObject {
-    
+    w
     @Published var studentNumber = ""
     @Published var studentNumbers = [String]()
     @Published var hasDuplicate: Bool = false

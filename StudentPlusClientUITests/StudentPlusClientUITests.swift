@@ -6,36 +6,75 @@
 //
 
 import XCTest
+@testable import StudentPlusClient
 
 final class StudentPlusClientUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+    
+    var app: XCUIApplication!
+    
+    override func setUp() {
+        super.setUp()
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+    
+    func testSignUpSuccess() {
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let studentNumberField = app.textFields["Student Number*"]
+        studentNumberField.tap()
+        studentNumberField.typeText("1234567890")
+        
+        let firstNameField = app.textFields["First Name*"]
+        firstNameField.tap()
+        firstNameField.typeText("John")
+        
+        let lastNameField = app.textFields["Last Name"]
+        lastNameField.tap()
+        lastNameField.typeText("Doe")
+        
+        let courseField = app.textFields["Course"]
+        courseField.tap()
+        courseField.typeText("Computer Science")
+        
+        let graduationDatePicker = app.datePickers["Graduation Date"]
+        graduationDatePicker.swipeUp()
+        let yearComponent = graduationDatePicker.pickerWheels.element(boundBy: 0)
+        yearComponent.adjust(toPickerWheelValue: "2024")
+        
+        let passwordField = app.secureTextFields["Password*"]
+        passwordField.tap()
+        passwordField.typeText("123456")
+        
+        app.buttons["Sign Up"].tap()
+        
+        XCTAssertTrue(app.navigationBars["Home"].exists)
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    
+    func testSignUpError() {
+        app.launch()
+        
+        let studentNumberField = app.textFields["Student Number*"]
+        studentNumberField.tap()
+        studentNumberField.typeText("invalid_student_number")
+        
+        let firstNameField = app.textFields["First Name*"]
+        firstNameField.tap()
+        firstNameField.typeText("John")
+        
+        let passwordField = app.secureTextFields["Password*"]
+        passwordField.tap()
+        passwordField.typeText("123456")
+        
+        app.buttons["Sign Up"].tap()
+        
+        XCTAssertTrue(app.alerts["Error"].exists)
+        app.alerts["Error"].buttons["OK"].tap()
+    }
+    
+    func testSignInNavigation() {
+        app.launch()
+        
+        XCTAssertTrue(app.navigationBars["Sign In"].exists)
     }
 }
